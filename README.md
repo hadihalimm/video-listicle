@@ -1,54 +1,61 @@
-# React + TypeScript + Vite
+# PlayListicle - Video Listicle Template Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+This project can be run using either [Bun](https://bun.sh/) or [npm](https://www.npmjs.com/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+Make sure you have either Bun or Node.js installed on your machine.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Bun**: [Install Bun](https://bun.sh/docs/installation)
+- **Node.js**: [Install Node.js](https://nodejs.org/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Installation
+
+Clone the repository and navigate into the project directory:
+
+```sh
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### Using Bun
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```sh
+bun install
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+#### Using npm
+
+```sh
+npm install
+```
+
+### Running the App
+
+#### Using Bun
+
+```sh
+bun run dev
+```
+
+#### Using npm
+
+```sh
+npm run dev
+```
+
+### Building the App
+
+#### Using Bun
+
+```sh
+bun run build
+```
+
+#### Using npm
+
+```sh
+npm run build
 ```
