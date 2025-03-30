@@ -16,8 +16,8 @@ Make sure you have either Bun or Node.js installed on your machine.
 Clone the repository and navigate into the project directory:
 
 ```sh
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/hadihalimm/video-listicle
+cd video-listicle
 ```
 
 #### Using Bun
