@@ -42,7 +42,7 @@ const VideoCard = ({ video, onPlay }: VideoCardProps) => {
             </CardContent>
             <CardHeader>
               <CardTitle>{video.title}</CardTitle>
-              <CardDescription className="line-clamp-3">
+              <CardDescription className="line-clamp-2">
                 {video.description}
               </CardDescription>
             </CardHeader>
